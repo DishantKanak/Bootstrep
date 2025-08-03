@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Columns</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column {
+  flex: 33.33%;
+  background-color: #4CAF50;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Tablet View (2 columns) */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* Mobile View (1 column) */
+@media screen and (max-width: 480px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="row">
+    <div class="column">Column 1</div>
+    <div class="column">Column 2</div>
+    <div class="column">Column 3</div>
+  </div>
+
+</body>
+</html>
+
+</body>
+
+</html>
